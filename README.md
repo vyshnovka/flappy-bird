@@ -10,5 +10,5 @@ This is a simplified clone of the Flappy Bird game on Unity.
 ## Setup
 
 1. Install Unity 2020.3.14 from [archive](https://unity3d.com/get-unity/download/archive).    
-2. Clone this repository using `git clone https://github.com/vyshnovka/flappy_bird.git` in Git Bash.    
+2. Clone this repository using `git clone https://github.com/vyshnovka/flappy-bird.git` in Git Bash.    
 3. Open created folder as a project in Unity Hub.    
