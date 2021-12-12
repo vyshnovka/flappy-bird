@@ -1,14 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AddScore : MonoBehaviour
 {
+    private int score = 0;
+
+    void Start()
+    {
+        score = 0;
+    }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Bird"))
         {
-            ScoreCount.score++;
+            score++;
+            //scoreText.text = score.ToString();
         }
     }
 }
