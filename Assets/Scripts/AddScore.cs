@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class AddScore : MonoBehaviour
 {
-    private int score = 0;
+    private int score;
+    public Text scoreText;
 
     void Start()
     {
@@ -14,10 +15,10 @@ public class AddScore : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bird"))
+        if (collision.CompareTag("ObstaclePassed"))
         {
             score++;
-            //scoreText.text = score.ToString();
+            scoreText.text = score.ToString();
         }
     }
 }

@@ -585,7 +585,6 @@ GameObject:
   - component: {fileID: 8126436070034372878}
   - component: {fileID: 6584974747240166963}
   - component: {fileID: 2278708423145396808}
-  - component: {fileID: 1393153538640682740}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: ObstaclePassed
@@ -648,19 +647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleSpeed: 1
---- !u!114 &1393153538640682740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5295067557269725514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ec61739336580a4499a45ef6e078b3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
 --- !u!1 &6554740919572850441
 GameObject:
   m_ObjectHideFlags: 0
