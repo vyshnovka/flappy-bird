@@ -14,24 +14,16 @@ public class UIManagement : MonoBehaviour
     public GameObject RestartUI;
     public GameObject Score;
 
-    public GameObject Text;
-
-    public float moveScoreY = 0f;
-
     void Start()
     {
         RestartUI.SetActive(false);
         Score.SetActive(false);
 
         Time.timeScale = 0;
-    }
-
-    public void Awake()
-    {
         state = States.Start;
     }
 
-    void Update()
+    public void Update()
     {
         switch (state)
         {
@@ -43,7 +35,7 @@ public class UIManagement : MonoBehaviour
                     Time.timeScale = 1;
                     UIManagement.state = UIManagement.States.Play;
                     StartUI.SetActive(false);
-                } 
+                }
 
                 break;
             case States.Play:
@@ -52,8 +44,7 @@ public class UIManagement : MonoBehaviour
                 break;
             case States.Restart:
                 RestartUI.SetActive(true);
-                Text.transform.position = new Vector3(0f, moveScoreY, 0f); ;
-                
+
                 Time.timeScale = 0;
 
                 if (Input.GetMouseButtonUp(0))
