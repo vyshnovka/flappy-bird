@@ -10,6 +10,7 @@ public class Death : MonoBehaviour
     {
         animator.SetBool("isDead", true);
         this.transform.Find("DeathSound").gameObject.GetComponent<AudioSource>().Play();
+
         UIManagement.state = UIManagement.States.Restart;
     }
 }
