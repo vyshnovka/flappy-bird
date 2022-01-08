@@ -2,7 +2,8 @@
 
 This is a clone of the Flappy Bird game on Unity.
 
-The original game is pretty simple (hyper-casual, obviously), so it's a great choice as a first project.
+The original game is pretty simple (hyper-casual, obviously), so it's a great choice as a first project.    
+All major mechanics have been implemented.
 
 ## Tools
 
