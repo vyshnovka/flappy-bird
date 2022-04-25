@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class ObstacleSpawn : MonoBehaviour
 {
-    private float timer;
-    public float deltaTime;
-   
-    public GameObject obstacle;
-    public float range;
+    [SerializeField]
+    private GameObject obstacle;
 
-    void Update()
+    [SerializeField]
+    private float timeToWait;
+    [SerializeField]
+    private float range;
+
+    private void Start()
     {
-        if (timer > deltaTime)
+        StartCoroutine(Spawner());
+    }
+
+    IEnumerator Spawner()
+    {
+        while (true)
         {
-            GameObject obstacleClone = Instantiate(obstacle);
-            obstacleClone.transform.position = transform.position + new Vector3(0, Random.Range(-range, range + 0.6f), 0);
+            Instantiate(obstacle, new Vector3(transform.position.x, Random.Range(-range, range), 0), transform.rotation);
 
-            timer = 0;
+            yield return new WaitForSeconds(timeToWait);
         }
-
-        timer += Time.deltaTime;
     }
 }
