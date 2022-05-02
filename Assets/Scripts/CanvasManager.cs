@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class CanvasManager : MonoBehaviour
 {
-    public static UIManager instance;
+    public static CanvasManager instance;
 
     [SerializeField]
     private GameObject playButton;
@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
     private GameObject resetButton;
     [SerializeField]
     private Text scoreText;
+
+    private int count;
 
     void Awake()
     {
@@ -27,10 +29,13 @@ public class UIManager : MonoBehaviour
 
     void Start()
     {
+        //PlayerPrefs.DeleteAll();
+        count = PlayerPrefs.GetInt("Count", 1);
+
         Time.timeScale = 0;
     }
 
-    public void ShowRestartUI()
+    public void ShowRestartButton()
     {
         Time.timeScale = 0;
         scoreText.gameObject.SetActive(false);
@@ -46,7 +51,15 @@ public class UIManager : MonoBehaviour
 
     public void RestartGame()
     {
-        resetButton.SetActive(false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PlayerPrefs.SetInt("Count", count + 1);
+
+        if (count < 5)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }

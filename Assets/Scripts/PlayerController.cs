@@ -38,6 +38,6 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isDead", true);
         audioSource.PlayOneShot(deathSound, 1f);
 
-        UIManager.instance.ShowRestartUI();
+        CanvasManager.instance.ShowRestartButton();
     }
 }
