@@ -7,9 +7,9 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     [SerializeField]
-    private GameObject startUI;
+    private GameObject playButton;
     [SerializeField]
-    private GameObject restartUI;
+    private GameObject resetButton;
     [SerializeField]
     private Text scoreText;
 
@@ -34,19 +34,19 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 0;
         scoreText.gameObject.SetActive(false);
-        restartUI.SetActive(true);
+        resetButton.SetActive(true);
     }
 
     public void StartGame()
     {
         Time.timeScale = 1;
-        startUI.SetActive(false);
+        playButton.SetActive(false);
         scoreText.gameObject.SetActive(true);
     }
 
     public void RestartGame()
     {
-        restartUI.SetActive(false);
+        resetButton.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
