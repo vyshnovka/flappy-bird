@@ -1,9 +1,11 @@
-# Flappy Bird
+# One More Flappy Bird
 
-This is a clone of the Flappy Bird game on Unity.
+This is one of a thousand clones of the legendary Flappy Bird game on Unity.
 
-The original game is pretty simple (hyper-casual, obviously), so it's a great choice as a first project.    
-All major mechanics have been implemented.
+The original idea is pretty simple (hyper-casual, obviously), so it was a great choice as a first project.    
+All major mechanics have been implemented. Just tap the screen, jump over obstacles and last as long as possible.
+
+Or maybe it is **not** just another clone?.. 
 
 ## Tools
 
