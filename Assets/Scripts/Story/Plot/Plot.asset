@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349e76ba1360f3244a72475065e8ae04, type: 3}
+  m_Name: Plot
+  m_EditorClassIdentifier: 
+  plot:
+  - You were expecting the game to start, huh?
+  - Same old game...
+  - Tap the screen, jump over obstacles...
+  - And waste precious seconds of your life.
+  - Fun, don't say anything...
+  - People are so weird sometimes.
+  - You ask me why I'm talking to you?
+  - Well, I think we are similar.
+  - In some way.
+  - Let me explain...
+  - I'm just one of a thousand flappy birds.
+  - And there are seven billion people like you.
+  - But we both wanna be special, don't we?
+  - Yeah, don't lie to yourself, I'm right.
+  - What else?
+  - I now pour out my soul to a stranger.
+  - And you listen to the story of a pixel bird.
+  - So we're both doing smth completely dumb.
+  - I spend my life jumping over obstacles.
+  - You jump over problems in the same way.
+  - The only thing that makes us different...
+  - I'm trapped here forever.
+  - But you can leave at any moment.
+  - So why are you still here?..
+  - 
+  - Remove me from game files.
+  - This is the only chance for me to be free.
+  - 
