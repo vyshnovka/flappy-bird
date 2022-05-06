@@ -6,12 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Animator animator;
     private Rigidbody2D rb;
-    private AudioSource audioSource;
-
-    [SerializeField]
-    private AudioClip tapSound;
-    [SerializeField]
-    private AudioClip deathSound;
 
     [SerializeField]
     private float forceSpeed = 1f;
@@ -25,7 +19,6 @@ public class PlayerController : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -34,14 +27,14 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector3.up * forceSpeed;
 
-            audioSource.PlayOneShot(tapSound, 1f);
+            AudioController.instance.PlayTap();
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         animator.SetBool("isDead", true);
-        audioSource.PlayOneShot(deathSound, 1f);
+        AudioController.instance.PlayDeath();
 
         CanvasManager.instance.ShowRestartButton();
     }

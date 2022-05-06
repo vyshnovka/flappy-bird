@@ -94,6 +94,8 @@ public class StoryTeller : MonoBehaviour
         coroutine = StartCoroutine(TextWritter("Thank you..."));
 
         PlayerPrefs.SetInt("Decision", 1);
+
+        AudioController.instance.PlayTap();
     }
 
     public void LeaveOption()
@@ -104,5 +106,7 @@ public class StoryTeller : MonoBehaviour
         coroutine = StartCoroutine(TextWritter("It's your choice, I have no right to judge you."));
 
         PlayerPrefs.SetInt("Decision", 2);
+
+        AudioController.instance.PlayTap();
     }
 }

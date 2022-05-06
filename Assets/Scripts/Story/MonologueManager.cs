@@ -37,6 +37,7 @@ public class MonologueManager : MonoBehaviour
     public void StartMonologue()
     {
         playButton.SetActive(false);
+        AudioController.instance.PlayTap();
 
         StartCoroutine(Utility.TimedEvent(() =>
         {

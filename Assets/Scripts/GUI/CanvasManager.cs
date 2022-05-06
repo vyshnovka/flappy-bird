@@ -33,6 +33,8 @@ public class CanvasManager : MonoBehaviour
         count = PlayerPrefs.GetInt("Count", 1);
 
         Time.timeScale = 0;
+
+        AudioController.instance.SetVolume(0f);
     }
 
     public void ShowRestartButton()
@@ -45,6 +47,10 @@ public class CanvasManager : MonoBehaviour
     public void StartGame()
     {
         Time.timeScale = 1;
+
+        AudioController.instance.SetVolume(1f);
+        AudioController.instance.PlayTap();
+
         playButton.SetActive(false);
         scoreText.gameObject.SetActive(true);
     }
