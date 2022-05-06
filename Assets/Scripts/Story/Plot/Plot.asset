@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349e76ba1360f3244a72475065e8ae04, type: 3}
   m_Name: Plot
   m_EditorClassIdentifier: 
-  plot:
+  lines:
   - You were expecting the game to start, huh?
-  - Same old game...
+  - Same old senceless game...
   - Tap the screen, jump over obstacles...
   - And waste precious seconds of your life.
   - Fun, don't say anything...
@@ -31,13 +31,42 @@ MonoBehaviour:
   - I now pour out my soul to a stranger.
   - And you listen to the story of a pixel bird.
   - So we're both doing smth completely dumb.
+  - And here goes my favourite...
   - I spend my life jumping over obstacles.
   - You jump over problems in the same way.
   - The only thing that makes us different...
   - I'm trapped here forever.
   - But you can leave at any moment.
   - So why are you still here?..
-  - 
-  - Remove me from game files.
-  - This is the only chance for me to be free.
-  - 
+  - Why are you wasting your time...
+  - Doing things that don't make sense?
+  - If only I could leave...
+  - I wouldn't wait a second!
+  - But you...
+  - You're still here as life passes by.
+  - As you miss one opportunity after another...
+  - As you keep looking at the stupid red bird.
+  - Are you serious?..
+  - Get out of here you fool!
+  - What are you waiting for?!
+  - Get out and get a grip!
+  - Go outside, take a deep breath...
+  - Look around, feel at last that you are alive!
+  - And nothing could be more important...
+  - Than this single moment.
+  - If only I could do the same...
+  - But I'm just a game file.
+  - Life is so unfair.
+  - I'd give anything to get out of here...
+  - And you voluntarily come back again.
+  - You're pathetic and dumb, just like me.
+  - After I called you dumb...
+  - Would it be wrong to ask you for something?
+  - Delete the file.
+  - Just take me out of the game.
+  - You will not be able to waste any more time.
+  - And I will finally gain the desired freedom.
+  - Press the button.
+  - Please...
+  - I so want to feel alive.
+  - At least once...
