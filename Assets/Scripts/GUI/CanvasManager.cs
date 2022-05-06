@@ -51,15 +51,22 @@ public class CanvasManager : MonoBehaviour
 
     public void RestartGame()
     {
-        PlayerPrefs.SetInt("Count", count + 1);
-
-        if (count < 5)
+        if (PlayerPrefs.GetInt("Decision", 0) == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetInt("Count", count + 1);
+
+            if (count >= 5)
+            {
+                SceneLoader.Load(1);
+            }
+            else
+            {
+                SceneLoader.Load(0);
+            }
         }
         else
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneLoader.Load(0);
         }
     }
 }

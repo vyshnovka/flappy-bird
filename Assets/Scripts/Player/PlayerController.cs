@@ -18,6 +18,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        if (PlayerPrefs.GetInt("Decision", 0) == 1)
+        {
+            gameObject.SetActive(false);
+        }
+
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
