@@ -4,18 +4,35 @@ using UnityEngine;
 
 public class MonologueManager : MonoBehaviour
 {
-    [SerializeField]
-    private PlotGenerator plot;
-
-    [SerializeField]
-    [Range(0, 5)]
-    private float timeToWait = 0.1f;
+    public static MonologueManager instance;
 
     [SerializeField]
     private GameObject playButton;
-
     [SerializeField]
     private GameObject bubble;
+
+    [SerializeField]
+    private GameObject decisionButtons;
+
+    [SerializeField]
+    private GameObject blackBlock;
+
+    void Awake()
+    {
+        if (instance)
+        {
+            Destroy(instance);
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
 
     public void StartMonologue()
     {
@@ -27,8 +44,20 @@ public class MonologueManager : MonoBehaviour
         }, 2f));
     }
 
-    private IEnumerator StoryTeller()
+    public void ShowDecisionBlock()
     {
-        yield return new WaitForSeconds(timeToWait);
+        bubble.SetActive(!bubble.activeSelf);
+
+        decisionButtons.SetActive(!decisionButtons.activeSelf);
+    }
+
+    public void EndingAnimation()
+    {
+        blackBlock.SetActive(true);
+
+        StartCoroutine(Utility.TimedEvent(() =>
+        {
+            SceneLoader.Load(0);
+        }, 3f));
     }
 }
