@@ -23,10 +23,8 @@ public class MonologueManager : MonoBehaviour
         {
             Destroy(instance);
         }
-        else
-        {
-            instance = this;
-        }
+
+        instance = this;
     }
 
     void Start()

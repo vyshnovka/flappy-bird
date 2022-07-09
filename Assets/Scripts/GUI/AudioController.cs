@@ -19,10 +19,8 @@ public class AudioController : MonoBehaviour
         {
             Destroy(instance);
         }
-        else
-        {
-            instance = this;
-        }
+
+        instance = this;
     }
 
     void Start()

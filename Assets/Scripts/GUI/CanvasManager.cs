@@ -21,15 +21,12 @@ public class CanvasManager : MonoBehaviour
         {
             Destroy(instance);
         }
-        else
-        {
-            instance = this;
-        }
+
+        instance = this;
     }
 
     void Start()
     {
-        //PlayerPrefs.DeleteAll();
         count = PlayerPrefs.GetInt("Count", 1);
 
         Time.timeScale = 0;
