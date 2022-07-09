@@ -6,14 +6,16 @@ public class MonologueManager : MonoBehaviour
 {
     public static MonologueManager instance;
 
+    [Header("UI elements")]
     [SerializeField]
     private GameObject playButton;
+
     [SerializeField]
     private GameObject bubble;
-
     [SerializeField]
     private GameObject decisionButtons;
 
+    [Header("Ending screen")]
     [SerializeField]
     private GameObject blackBlock;
 
