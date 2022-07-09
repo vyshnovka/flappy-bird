@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public static class SceneLoader
 {
-    public static void Load(int index)
+    public static void Load(string scene)
     {
-        SceneManager.LoadScene(index);
+        SceneManager.LoadScene(scene);
     }
 }

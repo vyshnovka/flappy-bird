@@ -63,16 +63,16 @@ public class CanvasManager : MonoBehaviour
 
             if (count >= 5)
             {
-                SceneLoader.Load(1);
+                SceneLoader.Load("Monologue");
             }
             else
             {
-                SceneLoader.Load(0);
+                SceneLoader.Load("Gameplay");
             }
         }
         else
         {
-            SceneLoader.Load(0);
+            SceneLoader.Load("Gameplay");
         }
     }
 }
