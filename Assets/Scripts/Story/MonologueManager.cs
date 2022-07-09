@@ -58,7 +58,7 @@ public class MonologueManager : MonoBehaviour
 
         StartCoroutine(Utility.TimedEvent(() =>
         {
-            SceneLoader.Load(0);
+            SceneLoader.Load("Gameplay");
         }, 3f));
     }
 }
