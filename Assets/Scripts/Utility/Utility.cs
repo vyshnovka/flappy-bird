@@ -4,9 +4,9 @@ using UnityEngine;
 
 public static class Utility
 {
-    public static IEnumerator TimedEvent(Action action, float time)
+    public static IEnumerator TimedEvent(Action action, float delay)
     {
-        yield return new WaitForSeconds(time);
+        yield return new WaitForSeconds(delay);
         action.Invoke();
     }
 }
