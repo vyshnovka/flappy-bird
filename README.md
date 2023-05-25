@@ -1,4 +1,4 @@
-# Not So Flappy Bird
+# One More Flappy Bird
 
 It is one of a thousand clones of the legendary hyper-casual game implemented on Unity.
 
