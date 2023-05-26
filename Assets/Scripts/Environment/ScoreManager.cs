@@ -5,10 +5,26 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
-    private int score;
+    // Initialize a ScoreManager singleton
+    public static ScoreManager Instance { get; private set; }
+
+    [HideInInspector]
+    public int score;
 
     [SerializeField]
     private Text scoreText;
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
 
     void Start()
     {

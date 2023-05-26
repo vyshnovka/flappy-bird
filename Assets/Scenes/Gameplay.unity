@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -646,9 +646,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0648682ce97f4dc44aa3bd5aa8a5875d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 5295067557269725514, guid: 199f34a1e0e9b9b47b3ce8911a79fe30, type: 3}
-  timeToWait: 2.5
-  range: 0.35
+  obstacle: {fileID: 2278708423145396808, guid: 199f34a1e0e9b9b47b3ce8911a79fe30, type: 3}
+  difficultyAdjustment:
+  - score: 5
+    timeToWait: 2.5
+    range: 0.35
+    obstacleSpeed: 0.4
+  - score: 10
+    timeToWait: 2.25
+    range: 0.4
+    obstacleSpeed: 0.55
+  - score: 15
+    timeToWait: 2
+    range: 0.45
+    obstacleSpeed: 0.6
+  - score: 20
+    timeToWait: 1.75
+    range: 0.5
+    obstacleSpeed: 0.65
 --- !u!4 &227629155
 Transform:
   m_ObjectHideFlags: 0
@@ -1949,6 +1964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ec61739336580a4499a45ef6e078b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
   scoreText: {fileID: 1109192634}
 --- !u!1 &1577234464
 GameObject:
