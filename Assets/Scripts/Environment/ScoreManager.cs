@@ -17,7 +17,7 @@ public class ScoreManager : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Obstacle"))
+        if (collision.CompareTag("Score"))
         {
             score++;
             scoreText.text = score.ToString();

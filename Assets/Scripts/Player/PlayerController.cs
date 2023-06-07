@@ -33,9 +33,12 @@ public class PlayerController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        animator.SetBool("isDead", true);
-        AudioController.instance.PlayDeath();
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            animator.SetBool("isDead", true);
+            AudioController.instance.PlayDeath();
 
-        CanvasManager.instance.ShowRestartButton();
+            CanvasManager.instance.ShowRestartButton();
+        }
     }
 }
