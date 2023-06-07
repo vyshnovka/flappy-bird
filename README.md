@@ -1,6 +1,6 @@
 # One More Flappy Bird
 
-It is one of a thousand clones of the legendary hyper-casual game implemented on Unity.
+It is one of a thousand clones of the legendary game implemented on Unity.
 
 The original idea is pretty simple - hyper-casual, obviously. Tap the screen, jump over obstacles and last as long as possible.
 
@@ -13,6 +13,6 @@ Or maybe it is **not** just another clone?..
 
 ## Setup
 
-1. Install Unity 2021.3.5 from [archive](https://unity3d.com/get-unity/download/archive).    
+1. Install Unity 2021.3.25 from [archive](https://unity3d.com/get-unity/download/archive).    
 2. Clone this repository using `git clone https://github.com/vyshnovka/flappy-bird.git` in Git Bash.    
 3. Open created folder as a project in Unity Hub.    
